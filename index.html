@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Match 3 Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hot-button">HOT 🔥</div>
+
+  <div id="start-screen">
+    <h1>🍬 Match 3 Game</h1>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <div id="game-container" style="display: none;">
+    <div id="score">Score: 0</div>
+    <div id="level-container">
+      <div id="level-text">Level: 1</div>
+      <div class="progress-circle">
+        <svg viewBox="0 0 36 36">
+          <path class="progress-bg" d="M18 2.0845
+             a 15.9155 15.9155 0 0 1 0 31.831
+             a 15.9155 15.9155 0 0 1 0 -31.831" />
+          <path class="progress-bar" stroke-dasharray="100" stroke-dashoffset="100"
+             d="M18 2.0845
+             a 15.9155 15.9155 0 0 1 0 31.831
+             a 15.9155 15.9155 0 0 1 0 -31.831" />
+        </svg>
+        <div class="progress-text" id="progress-text">0%</div>
+      </div>
+    </div>
+    <div id="high-score">High Score: 0</div>
+    <div id="board"></div>
+  </div>
+
+  <div id="combo-popup"></div>
+
+  <audio id="bg-music" src="background.mp3" loop></audio>
+  <audio id="move-sound" src="move.mp3"></audio>
+  <audio id="combo-sound" src="combo.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
